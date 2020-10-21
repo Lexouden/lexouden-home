@@ -1,0 +1,32 @@
+:root {
+  --background-dark: #303030;
+}
+
+body {
+  background-color: var(--background-dark);
+}
+
+.App {
+  padding: 20px;
+  text-align: center;
+  height: 100%;
+
+  &[theme=dark] {
+    color: white;
+  }
+
+  &[theme=light] {
+    color: black;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+
+  &:visited {
+    color: unset;
+  }
+}
+
+.Page {}

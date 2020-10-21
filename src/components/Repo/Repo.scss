@@ -1,0 +1,38 @@
+.Card {
+  min-width: 275px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.Actions {
+  position: relative;
+  margin: 0 10px;
+
+  .archived {
+    position: absolute;
+    right: 0;
+  }
+}
+
+.languages {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+
+  .lang {
+    &:not(:first-of-type) {
+      &::before {
+        content: "\22c5";
+        display: inline-block;
+        margin-right: 5px;
+        padding-bottom: 5%;
+        transform: scale(2.8);
+      }
+    }
+  }
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+}
